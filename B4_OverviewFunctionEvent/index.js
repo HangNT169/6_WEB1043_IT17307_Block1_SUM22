@@ -46,3 +46,10 @@
 function clickMe(a) {
   alert(a);
 }
+function showAnh1() {
+  document.write("<img src='...'/>");
+}
+
+function showAnh2() {
+  document.write("<img src='...'/>");
+}
