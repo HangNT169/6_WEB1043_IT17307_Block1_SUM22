@@ -80,17 +80,25 @@ console.log(dv1.ten);
 function Dog(ten, tuoi) {
   this.ten = ten;
   this.tuoi = tuoi;
+  // this.tiengKeu = function () {
+  //   return "Gau Gau";
+  // };
+  this.inThongTin = function () {
+    console.log(this.ten + " - " + this.tuoi);
+  };
 }
 
-// Khoi tao cac phan tu trong mang Dog
-Dog[0] = new Dog("ten1", 10);
-Dog[1] = new Dog("ten2", 1);
-Dog[2] = new Dog("ten3", 4);
-Dog[3] = new Dog("ten4", 7);
-Dog[4] = new Dog("ten5", 9);
+let dog = new Dog("ten1", 10);
+dog.inThongTin();
+// // Khoi tao cac phan tu trong mang Dog
+// Dog[0] = new Dog("ten1", 10);
+// Dog[1] = new Dog("ten2", 1);
+// Dog[2] = new Dog("ten3", 4);
+// Dog[3] = new Dog("ten4", 7);
+// Dog[4] = new Dog("ten5", 9);
 
-// in cac phan tu
-console.log("For -in");
-for (var index in Dog) {
-  console.log(Dog[index].ten);
-}
+// // in cac phan tu
+// console.log("For -in");
+// for (var index in Dog) {
+//   console.log(Dog[index].tiengKeu());
+// }
