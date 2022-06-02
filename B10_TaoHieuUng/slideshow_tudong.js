@@ -19,22 +19,12 @@ function loadImage() {
     imageObjects.push(img);
   });
 
+  // chay tu dong
+  start();
+
   // B4: Xet anh vao HTML
   document.img_pet.src = imageObjects[indexHienTai].src;
 }
-
-/**
- * Previos Image
- */
-function previousImage() {
-  indexHienTai--;
-  if (indexHienTai < 0) {
-    indexHienTai = imageObjects.length - 1;
-  }
-  // xet lai HTML
-  document.img_pet.src = imageObjects[indexHienTai].src;
-}
-
 // Start
 function start() {
   if (intervalId === undefined) {
@@ -43,13 +33,6 @@ function start() {
     }, 2000);
   }
 }
-
-// Stop
-function stop() {
-  clearInterval(intervalId);
-  intervalId = undefined;
-}
-
 // Next image
 function nextImage() {
   indexHienTai++;
