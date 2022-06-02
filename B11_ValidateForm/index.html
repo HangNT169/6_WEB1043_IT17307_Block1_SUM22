@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <h3>DANG KY KHOA HOC ONLINE</h3>
+      <form>
+        <!-- Dong 1 -->
+        <div>
+          <span>Ho ten</span>
+          <input type="text" class="inputText" />
+          <span></span>
+        </div>
+        <!-- Dong 2 -->
+        <div>
+          <span>Email</span>
+          <input type="email" class="inputText" />
+          <span></span>
+        </div>
+        <!-- Dong 3 -->
+        <div>
+          <span>So dien thoai</span>
+          <input type="number" class="inputText" />
+          <span></span>
+        </div>
+        <!-- Dong 4 -->
+        <div>
+          <span>Khoa hoc</span>
+          <select name="khoaHoc" id="khoaHoc" onchange="onChangeKhoaHoc();">
+            <option value="500" selected>Khoa HTML</option>
+            <option value="800">Khoa JS</option>
+            <option value="1000">Khoa PHP</option>
+          </select>
+        </div>
+        <!-- Dong 5 -->
+        <div>
+          <span>Hoc phi</span>
+          <input type="text" id="hocPhi" class="inputText" />
+          <span></span>
+        </div>
+        <!-- Dong 6 -->
+        <div>
+          <span>Hinh thuc hoc</span>
+          <input type="radio" name="radioGroup" checked />Tai truong
+          <input type="radio" name="radioGroup" />Hoc online
+        </div>
+
+        <!-- Button -->
+        <input onclick="register();" type="button" value="Dang ky" />
+      </form>
+    </div>
+    <script src="../B11_ValidateForm/index.js"></script>
+  </body>
+</html>
